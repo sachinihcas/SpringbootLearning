@@ -9,6 +9,11 @@ public class FirstSpringinitApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(FirstSpringinitApplication.class, args);
+		
+		Alien a = context.getBean(Alien.class);
+		
+		a.show();
+		
 	}
-//sahci
+
 }
